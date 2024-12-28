@@ -1,0 +1,2944 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--metatextblock-->
+    <title>CORGI LIFE</title>
+    <meta property="og:url" content="http://toncorgi.fun" />
+    <meta property="og:title" content="CORGI LIFE" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="http://toncorgi.fun" />
+    <!--/metatextblock-->
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="https://ws.tildacdn.com" />
+    <link rel="dns-prefetch" href="https://static.tildacdn.com" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="32x32"
+      href="../static.tildacdn.com/tild3430-3666-4064-b262-353330333864/ezgif-2-5c99cab5a7.gif"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="32x32"
+      href="../static.tildacdn.com/tild6162-6430-4832-b763-646138326536/ezgif-2-5c99cab5a7.gif"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="../static.tildacdn.com/tild6265-6566-4164-b636-353863356632/__2024-07-19_152143.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../static.tildacdn.com/tild6265-6566-4164-b636-353863356632/__2024-07-19_152143.png"
+    />
+    <!-- Assets -->
+    <script
+      src="../neo.tildacdn.com/js/tilda-fallback-1.0.min.js"
+      async=""
+      charset="utf-8"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="../static.tildacdn.com/css/tilda-grid-3.0.min.css"
+      type="text/css"
+      media="all"
+      onerror="this.loaderr='y';"
+    />
+    <link
+      rel="stylesheet"
+      href="../static.tildacdn.com/ws/project10104731/tilda-blocks-page52058505.min_t%3D1721405079.css"
+      type="text/css"
+      media="all"
+      onerror="this.loaderr='y';"
+    />
+    <link
+      rel="stylesheet"
+      href="../static.tildacdn.com/css/tilda-animation-2.0.min.css"
+      type="text/css"
+      media="all"
+      onerror="this.loaderr='y';"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Seymour+One:wght@400"
+      type="text/css"
+    />
+    <script
+      nomodule=""
+      src="../static.tildacdn.com/js/tilda-polyfill-1.0.min.js"
+      charset="utf-8"
+    ></script>
+    <script type="text/javascript">
+      function t_onReady(func) {
+        if (document.readyState != "loading") {
+          func();
+        } else {
+          document.addEventListener("DOMContentLoaded", func);
+        }
+      }
+      function t_onFuncLoad(funcName, okFunc, time) {
+        if (typeof window[funcName] === "function") {
+          okFunc();
+        } else {
+          setTimeout(function () {
+            t_onFuncLoad(funcName, okFunc, time);
+          }, time || 100);
+        }
+      }
+      function t396_initialScale(t) {
+        t = document.getElementById("rec" + t);
+        if (t) {
+          t = t.querySelector(".t396__artboard");
+          if (t) {
+            var e,
+              r = document.documentElement.clientWidth,
+              a = [];
+            if ((l = t.getAttribute("data-artboard-screens")))
+              for (var l = l.split(","), i = 0; i < l.length; i++)
+                a[i] = parseInt(l[i], 10);
+            else a = [320, 480, 640, 960, 1200];
+            for (i = 0; i < a.length; i++) {
+              var o = a[i];
+              o <= r && (e = o);
+            }
+            var n =
+                "edit" === window.allrecords.getAttribute("data-tilda-mode"),
+              d = "center" === t396_getFieldValue(t, "valign", e, a),
+              u = "grid" === t396_getFieldValue(t, "upscale", e, a),
+              c = t396_getFieldValue(t, "height_vh", e, a),
+              g = t396_getFieldValue(t, "height", e, a),
+              s =
+                (!!window.opr && !!window.opr.addons) ||
+                !!window.opera ||
+                -1 !== navigator.userAgent.indexOf(" OPR/");
+            if (!n && d && !u && !c && g && !s) {
+              for (
+                var _ = parseFloat((r / e).toFixed(3)),
+                  f = [
+                    t,
+                    t.querySelector(".t396__carrier"),
+                    t.querySelector(".t396__filter"),
+                  ],
+                  i = 0;
+                i < f.length;
+                i++
+              )
+                f[i].style.height = Math.floor(parseInt(g, 10) * _) + "px";
+              t396_scaleInitial__getElementsToScale(t).forEach(function (t) {
+                t.style.zoom = _;
+              });
+            }
+          }
+        }
+      }
+      function t396_scaleInitial__getElementsToScale(t) {
+        t = Array.prototype.slice.call(t.querySelectorAll(".t396__elem"));
+        if (!t.length) return [];
+        var e = [];
+        return (t = t.filter(function (t) {
+          t = t.closest('.t396__group[data-group-type-value="physical"]');
+          return !t || (-1 === e.indexOf(t) && e.push(t), !1);
+        })).concat(e);
+      }
+      function t396_getFieldValue(t, e, r, a) {
+        var l = a[a.length - 1],
+          i =
+            r === l
+              ? t.getAttribute("data-artboard-" + e)
+              : t.getAttribute("data-artboard-" + e + "-res-" + r);
+        if (!i)
+          for (var o = 0; o < a.length; o++) {
+            var n = a[o];
+            if (
+              !(n <= r) &&
+              (i =
+                n === l
+                  ? t.getAttribute("data-artboard-" + e)
+                  : t.getAttribute("data-artboard-" + e + "-res-" + n))
+            )
+              break;
+          }
+        return i;
+      }
+    </script>
+    <script
+      src="../static.tildacdn.com/js/tilda-scripts-3.0.min.js"
+      charset="utf-8"
+      defer=""
+      onerror="this.loaderr='y';"
+    ></script>
+    <script
+      src="../static.tildacdn.com/ws/project10104731/tilda-blocks-page52058505.min_t%3D1721405079.js"
+      charset="utf-8"
+      async=""
+      onerror="this.loaderr='y';"
+    ></script>
+    <script
+      src="../static.tildacdn.com/js/tilda-lazyload-1.0.min.js"
+      charset="utf-8"
+      async=""
+      onerror="this.loaderr='y';"
+    ></script>
+    <script
+      src="../static.tildacdn.com/js/tilda-animation-2.0.min.js"
+      charset="utf-8"
+      async=""
+      onerror="this.loaderr='y';"
+    ></script>
+    <script
+      src="../static.tildacdn.com/js/tilda-zero-1.1.min.js"
+      charset="utf-8"
+      async=""
+      onerror="this.loaderr='y';"
+    ></script>
+    <script
+      src="../static.tildacdn.com/js/tilda-animation-ext-1.0.min.js"
+      charset="utf-8"
+      async=""
+      onerror="this.loaderr='y';"
+    ></script>
+    <script
+      src="../static.tildacdn.com/js/tilda-zero-scale-1.0.min.js"
+      charset="utf-8"
+      async=""
+      onerror="this.loaderr='y';"
+    ></script>
+    <script
+      src="../static.tildacdn.com/js/tilda-events-1.0.min.js"
+      charset="utf-8"
+      async=""
+      onerror="this.loaderr='y';"
+    ></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+    </script>
+    <script type="text/javascript">
+      (function () {
+        if (
+          /bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(
+            navigator.userAgent
+          ) === false &&
+          typeof sessionStorage != "undefined" &&
+          sessionStorage.getItem("visited") !== "y" &&
+          document.visibilityState
+        ) {
+          var style = document.createElement("style");
+          style.type = "text/css";
+          style.innerHTML =
+            "@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}";
+          document.getElementsByTagName("head")[0].appendChild(style);
+          function t_setvisRecs() {
+            var alr = document.querySelectorAll(".t-records");
+            Array.prototype.forEach.call(alr, function (el) {
+              el.classList.add("t-records_animated");
+            });
+            setTimeout(function () {
+              Array.prototype.forEach.call(alr, function (el) {
+                el.classList.add("t-records_visible");
+              });
+              sessionStorage.setItem("visited", "y");
+            }, 400);
+          }
+          document.addEventListener("DOMContentLoaded", t_setvisRecs);
+        }
+      })();
+    </script>
+  </head>
+  <body class="t-body" style="margin: 0">
+    <!--allrecords-->
+    <div
+      id="allrecords"
+      class="t-records"
+      data-hook="blocks-collection-content-node"
+      data-tilda-project-id="10104731"
+      data-tilda-page-id="52058505"
+      data-tilda-formskey="959dbe7f0dd7261ebe8725d610104731"
+      data-tilda-cookie="no"
+      data-tilda-lazy="yes"
+      data-tilda-root-zone="com"
+    >
+      <div
+        id="rec774078609"
+        class="r t-rec"
+        style=""
+        data-animationappear="off"
+        data-record-type="396"
+      >
+        <!-- T396 --><style>
+          #rec774078609 .t396__artboard {
+            height: 550px;
+            background-color: #ffb02e;
+          }
+          #rec774078609 .t396__filter {
+            height: 550px;
+          }
+          #rec774078609 .t396__carrier {
+            height: 550px;
+            background-position: center center;
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          @media screen and (max-width: 1199px) {
+            #rec774078609 .t396__artboard,
+            #rec774078609 .t396__filter,
+            #rec774078609 .t396__carrier {
+            }
+            #rec774078609 .t396__filter {
+            }
+            #rec774078609 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 959px) {
+            #rec774078609 .t396__artboard,
+            #rec774078609 .t396__filter,
+            #rec774078609 .t396__carrier {
+            }
+            #rec774078609 .t396__filter {
+            }
+            #rec774078609 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 639px) {
+            #rec774078609 .t396__artboard,
+            #rec774078609 .t396__filter,
+            #rec774078609 .t396__carrier {
+            }
+            #rec774078609 .t396__filter {
+            }
+            #rec774078609 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            #rec774078609 .t396__artboard,
+            #rec774078609 .t396__filter,
+            #rec774078609 .t396__carrier {
+              height: 340px;
+            }
+            #rec774078609 .t396__filter {
+            }
+            #rec774078609 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721392782832"] {
+            z-index: 2;
+            top: 40px;
+            left: calc(50% - 600px + 64px);
+            width: 479px;
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721392782832"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec774078609 .tn-elem[data-elem-id="1721392782832"] {
+              top: 26px;
+              left: calc(50% - 160px + -9px);
+              width: 207px;
+            }
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721397782691"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 3;
+            top: 213px;
+            left: calc(50% - 600px + 555px);
+            width: 600px;
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721397782691"] .tn-atom {
+            color: #ffffff;
+            font-size: 26px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec774078609 .tn-elem[data-elem-id="1721397782691"] {
+              top: 212px;
+              left: calc(50% - 160px + 29px);
+              width: 215px;
+            }
+            #rec774078609 .tn-elem[data-elem-id="1721397782691"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721398155168"] {
+            color: #ffffff;
+            z-index: 4;
+            top: 0px;
+            left: calc(50% - 600px + 0px);
+            width: 40px;
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721398155168"] .tn-atom {
+            color: #ffffff;
+            font-size: 45px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec774078609 .tn-elem[data-elem-id="1721398155168"] {
+              top: 11px;
+              left: calc(50% - 160px + 19px);
+              width: 10px;
+            }
+            #rec774078609 .tn-elem[data-elem-id="1721398155168"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721398199065"] {
+            color: #000000;
+            z-index: 5;
+            top: 133px;
+            left: calc(50% - 600px + 652px);
+            width: 384px;
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721398199065"] .tn-atom {
+            color: #000000;
+            font-size: 44px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec774078609 .tn-elem[data-elem-id="1721398199065"] {
+              top: 97px;
+              left: calc(50% - 160px + 213px);
+              width: 64px;
+            }
+            #rec774078609 .tn-elem[data-elem-id="1721398199065"] .tn-atom {
+              font-size: 16px;
+            }
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721402729421"] {
+            color: #000000;
+            z-index: 6;
+            top: 40px;
+            left: calc(50% - 600px + 280px);
+            width: 560px;
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721402729421"] .tn-atom {
+            color: #000000;
+            font-size: 20px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721402769345"] {
+            color: #000000;
+            z-index: 7;
+            top: 18px;
+            left: calc(50% - 600px + 680px);
+            width: 211px;
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721402769345"] .tn-atom {
+            color: #000000;
+            font-size: 20px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec774078609 .tn-elem[data-elem-id="1721402769345"] {
+              top: 10px;
+              left: calc(50% - 160px + 100px);
+              width: 120px;
+            }
+            #rec774078609 .tn-elem[data-elem-id="1721402769345"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721402822461"] {
+            color: #ffb02e;
+            text-align: center;
+            z-index: 8;
+            top: 0px;
+            left: calc(50% - 600px + 901px);
+            width: 200px;
+            height: 55px;
+          }
+          #rec774078609 .tn-elem[data-elem-id="1721402822461"] .tn-atom {
+            color: #ffb02e;
+            font-size: 14px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 600;
+            border-radius: 30px;
+            background-color: #6f1414;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+            transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec774078609 .tn-elem[data-elem-id="1721402822461"] {
+              top: 0px;
+              left: calc(50% - 160px + 210px);
+              width: 98px;
+              height: 35px;
+            }
+            #rec774078609 .tn-elem[data-elem-id="1721402822461"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+        </style>
+        <div class="t396">
+          <div
+            class="t396__artboard"
+            data-artboard-recid="774078609"
+            data-artboard-screens="320,480,640,960,1200"
+            data-artboard-height="550"
+            data-artboard-valign="center"
+            data-artboard-upscale="grid"
+            data-artboard-height-res-320="340"
+          >
+            <div class="t396__carrier" data-artboard-recid="774078609"></div>
+            <div class="t396__filter" data-artboard-recid="774078609"></div>
+            <div
+              class="t396__elem tn-elem tn-elem__7740786091721392782832 t-animate"
+              data-elem-id="1721392782832"
+              data-elem-type="image"
+              data-field-top-value="40"
+              data-field-left-value="64"
+              data-field-width-value="479"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadein"
+              data-animate-duration="1"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="26"
+              data-field-left-res-320-value="-9"
+              data-field-width-res-320-value="207"
+            >
+              <div class="tn-atom">
+                <img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3937-6438-4736-b166-313039343536/ezgif-6-322f324389.gif"
+                  alt=""
+                  imgfield="tn_img_1721392782832"
+                />
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7740786091721397782691 t-animate"
+              data-elem-id="1721397782691"
+              data-elem-type="text"
+              data-field-top-value="213"
+              data-field-left-value="555"
+              data-field-width-value="600"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadein"
+              data-animate-duration="1"
+              data-animate-delay="1.5"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="212"
+              data-field-left-res-320-value="29"
+              data-field-width-res-320-value="215"
+            >
+              <div class="tn-atom" field="tn_text_1721397782691">
+                is a unique token inspired by the Corgi Life stickerpack. It
+                represents a funny corgi who is always ready for adventure and
+                fun. This token symbolizes joy, friendliness and loyalty.
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7740786091721398155168"
+              data-elem-id="1721398155168"
+              data-elem-type="text"
+              data-field-top-value="0"
+              data-field-left-value="0"
+              data-field-width-value="40"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="11"
+              data-field-left-res-320-value="19"
+              data-field-width-res-320-value="10"
+            >
+              <div class="tn-atom" field="tn_text_1721398155168">$CORGI</div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7740786091721398199065 t-animate"
+              data-elem-id="1721398199065"
+              data-elem-type="text"
+              data-field-top-value="133"
+              data-field-left-value="652"
+              data-field-width-value="384"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadein"
+              data-animate-duration="1"
+              data-animate-delay="1"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="97"
+              data-field-left-res-320-value="213"
+              data-field-width-res-320-value="64"
+            >
+              <div class="tn-atom" field="tn_text_1721398199065">
+                CORGi LIFE
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7740786091721402729421"
+              data-elem-id="1721402729421"
+              data-elem-type="text"
+              data-field-top-value="40"
+              data-field-left-value="280"
+              data-field-width-value="560"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+            >
+              <div class="tn-atom" field="tn_text_1721402729421"></div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7740786091721402769345"
+              data-elem-id="1721402769345"
+              data-elem-type="text"
+              data-field-top-value="18"
+              data-field-left-value="680"
+              data-field-width-value="211"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="10"
+              data-field-left-res-320-value="100"
+              data-field-width-res-320-value="120"
+            >
+              <div class="tn-atom" field="tn_text_1721402769345">
+                PRICE CHART
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7740786091721402822461"
+              data-elem-id="1721402822461"
+              data-elem-type="button"
+              data-field-top-value="0"
+              data-field-left-value="901"
+              data-field-height-value="55"
+              data-field-width-value="200"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value="px"
+              data-field-widthunits-value="px"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="0"
+              data-field-left-res-320-value="210"
+              data-field-height-res-320-value="35"
+              data-field-width-res-320-value="98"
+            >
+              <a class="tn-atom" href="https://dedust.io">BUY $CORGI</a>
+            </div>
+          </div>
+        </div>
+        <script>
+          t_onReady(function () {
+            t_onFuncLoad("t396_init", function () {
+              t396_init("774078609");
+            });
+          });
+        </script>
+        <!-- /T396 -->
+      </div>
+      <div
+        id="rec775905740"
+        class="r t-rec"
+        style=""
+        data-animationappear="off"
+        data-record-type="396"
+      >
+        <!-- T396 --><style>
+          #rec775905740 .t396__artboard {
+            height: 550px;
+            background-color: #ffffff;
+          }
+          #rec775905740 .t396__filter {
+            height: 550px;
+          }
+          #rec775905740 .t396__carrier {
+            height: 550px;
+            background-position: center center;
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          @media screen and (max-width: 1199px) {
+            #rec775905740 .t396__artboard,
+            #rec775905740 .t396__filter,
+            #rec775905740 .t396__carrier {
+            }
+            #rec775905740 .t396__filter {
+            }
+            #rec775905740 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 959px) {
+            #rec775905740 .t396__artboard,
+            #rec775905740 .t396__filter,
+            #rec775905740 .t396__carrier {
+            }
+            #rec775905740 .t396__filter {
+            }
+            #rec775905740 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 639px) {
+            #rec775905740 .t396__artboard,
+            #rec775905740 .t396__filter,
+            #rec775905740 .t396__carrier {
+            }
+            #rec775905740 .t396__filter {
+            }
+            #rec775905740 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            #rec775905740 .t396__artboard,
+            #rec775905740 .t396__filter,
+            #rec775905740 .t396__carrier {
+              height: 460px;
+            }
+            #rec775905740 .t396__filter {
+            }
+            #rec775905740 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          #rec775905740 .tn-elem[data-elem-id="1721399191033"] {
+            color: #000000;
+            z-index: 2;
+            top: 20px;
+            left: calc(50% - 600px + 20px);
+            width: 560px;
+          }
+          #rec775905740 .tn-elem[data-elem-id="1721399191033"] .tn-atom {
+            color: #000000;
+            font-size: 20px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+          }
+          #rec775905740 .tn-elem[data-elem-id="1721399210835"] {
+            color: #ffb02e;
+            text-align: center;
+            z-index: 3;
+            top: 30px;
+            left: calc(50% - 600px + 23px);
+            width: 671px;
+          }
+          #rec775905740 .tn-elem[data-elem-id="1721399210835"] .tn-atom {
+            color: #ffb02e;
+            font-size: 22px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775905740 .tn-elem[data-elem-id="1721399210835"] {
+              top: 161px;
+              left: calc(50% - 160px + 47px);
+              width: 227px;
+            }
+            #rec775905740 .tn-elem[data-elem-id="1721399210835"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec775905740 .tn-elem[data-elem-id="1721399550727"] {
+            z-index: 4;
+            top: 0px;
+            left: calc(50% - 600px + 746px);
+            width: 454px;
+          }
+          #rec775905740 .tn-elem[data-elem-id="1721399550727"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775905740 .tn-elem[data-elem-id="1721399550727"] {
+              top: 0px;
+              left: calc(50% - 160px + 70px);
+              width: 172px;
+            }
+          }
+          #rec775905740 .tn-elem[data-elem-id="1721399621257"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 5;
+            top: 418px;
+            left: calc(50% - 600px + 61px);
+            width: 200px;
+            height: 55px;
+          }
+          #rec775905740 .tn-elem[data-elem-id="1721399621257"] .tn-atom {
+            color: #ffffff;
+            font-size: 14px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 600;
+            border-radius: 30px;
+            background-color: #6f1414;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+            transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775905740 .tn-elem[data-elem-id="1721399621257"] {
+              top: 381px;
+              left: calc(50% - 160px + 88px);
+              width: 144px;
+              height: 50px;
+            }
+            #rec775905740 .tn-elem[data-elem-id="1721399621257"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+        </style>
+        <div class="t396">
+          <div
+            class="t396__artboard"
+            data-artboard-recid="775905740"
+            data-artboard-screens="320,480,640,960,1200"
+            data-artboard-height="550"
+            data-artboard-valign="center"
+            data-artboard-upscale="grid"
+            data-artboard-height-res-320="460"
+          >
+            <div class="t396__carrier" data-artboard-recid="775905740"></div>
+            <div class="t396__filter" data-artboard-recid="775905740"></div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759057401721399191033"
+              data-elem-id="1721399191033"
+              data-elem-type="text"
+              data-field-top-value="20"
+              data-field-left-value="20"
+              data-field-width-value="560"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+            >
+              <div class="tn-atom" field="tn_text_1721399191033"></div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759057401721399210835 t-animate"
+              data-elem-id="1721399210835"
+              data-elem-type="text"
+              data-field-top-value="30"
+              data-field-left-value="23"
+              data-field-width-value="671"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-delay="1.5"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="161"
+              data-field-left-res-320-value="47"
+              data-field-width-res-320-value="227"
+            >
+              <div class="tn-atom" field="tn_text_1721399210835">
+                Once upon a time, in a galaxy far away, where technology and
+                blockchain were commonplace, there lived a little corgi named
+                Lucky. He was very friendly and always looking for adventure.
+                One day Lucky found a mysterious artifact - an ancient scroll
+                with mysterious symbols. The corgi decided to decipher them, and
+                it turned out to be the code for creating a unique token - corgi
+                life
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759057401721399550727 t-animate"
+              data-elem-id="1721399550727"
+              data-elem-type="image"
+              data-field-top-value="0"
+              data-field-left-value="746"
+              data-field-width-value="454"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="0"
+              data-field-left-res-320-value="70"
+              data-field-width-res-320-value="172"
+            >
+              <div class="tn-atom">
+                <img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild6364-6137-4736-a461-313939626637/ezgif-6-703d234ea2.gif"
+                  alt=""
+                  imgfield="tn_img_1721399550727"
+                />
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759057401721399621257 t-animate"
+              data-elem-id="1721399621257"
+              data-elem-type="button"
+              data-field-top-value="418"
+              data-field-left-value="61"
+              data-field-height-value="55"
+              data-field-width-value="200"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value="px"
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-delay="2"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="381"
+              data-field-left-res-320-value="88"
+              data-field-height-res-320-value="50"
+              data-field-width-res-320-value="144"
+            >
+              <a class="tn-atom" href="t.me/CorgiTokenTon">JOIN TO ADVENTURE</a>
+            </div>
+          </div>
+        </div>
+        <script>
+          t_onReady(function () {
+            t_onFuncLoad("t396_init", function () {
+              t396_init("775905740");
+            });
+          });
+        </script>
+        <!-- /T396 -->
+      </div>
+      <div
+        id="rec775922859"
+        class="r t-rec"
+        style=""
+        data-animationappear="off"
+        data-record-type="396"
+      >
+        <!-- T396 --><style>
+          #rec775922859 .t396__artboard {
+            min-height: 550px;
+            height: 80vh;
+            background-color: #ffb02e;
+          }
+          #rec775922859 .t396__filter {
+            min-height: 550px;
+            height: 80vh;
+          }
+          #rec775922859 .t396__carrier {
+            min-height: 550px;
+            height: 80vh;
+            background-position: center center;
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          @media screen and (max-width: 1199px) {
+            #rec775922859 .t396__artboard,
+            #rec775922859 .t396__filter,
+            #rec775922859 .t396__carrier {
+            }
+            #rec775922859 .t396__filter {
+            }
+            #rec775922859 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 959px) {
+            #rec775922859 .t396__artboard,
+            #rec775922859 .t396__filter,
+            #rec775922859 .t396__carrier {
+            }
+            #rec775922859 .t396__filter {
+            }
+            #rec775922859 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 639px) {
+            #rec775922859 .t396__artboard,
+            #rec775922859 .t396__filter,
+            #rec775922859 .t396__carrier {
+            }
+            #rec775922859 .t396__filter {
+            }
+            #rec775922859 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .t396__artboard,
+            #rec775922859 .t396__filter,
+            #rec775922859 .t396__carrier {
+              min-height: 400px;
+            }
+            #rec775922859 .t396__filter {
+            }
+            #rec775922859 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400574792"] {
+            color: #000000;
+            z-index: 2;
+            top: calc(40vh - 275px + 62px);
+            left: calc(50% - 600px + 360px);
+            width: 560px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400574792"] .tn-atom {
+            color: #000000;
+            font-size: 20px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400580861"] {
+            color: #ffffff;
+            z-index: 3;
+            top: calc(40vh - 275px + -64px);
+            left: calc(50% - 600px + 368px);
+            width: 209px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400580861"] .tn-atom {
+            color: #ffffff;
+            font-size: 44px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721400580861"] {
+              top: 0px;
+              left: calc(50% - 160px + 81px);
+              width: 142px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721400580861"] .tn-atom {
+              font-size: 15px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400691973"] {
+            color: #ffffff;
+            z-index: 4;
+            top: calc(40vh - 275px + 12px);
+            left: calc(50% - 600px + 141px);
+            width: 917px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400691973"] .tn-atom {
+            color: #ffffff;
+            font-size: 53px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721400691973"] {
+              top: 32px;
+              left: calc(50% - 160px + 34px);
+              width: 253px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721400691973"] .tn-atom {
+              font-size: 15px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400767153"] {
+            color: #ffffff;
+            z-index: 5;
+            top: calc(40vh - 275px + 107px);
+            left: calc(50% - 600px + 400px);
+            width: 400px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400767153"] .tn-atom {
+            color: #ffffff;
+            font-size: 33px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721400767153"] {
+              top: 64px;
+              left: calc(50% - 160px + 72px);
+              width: 176px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721400767153"] .tn-atom {
+              font-size: 15px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400809442"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 6;
+            top: calc(40vh - 275px + 412px);
+            left: calc(50% - 600px + -4px);
+            width: 424px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400809442"] .tn-atom {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721400809442"] {
+              top: 215px;
+              left: calc(50% - 160px + 9px);
+              width: 144px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721400809442"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400847655"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 7;
+            top: calc(40vh - 275px + 459px);
+            left: calc(50% - 600px + 9px);
+            width: 402px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400847655"] .tn-atom {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721400847655"] {
+              top: 231px;
+              left: calc(50% - 160px + 9px);
+              width: 144px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721400847655"] .tn-atom {
+              font-size: 11px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400884256"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 8;
+            top: calc(40vh - 275px + 506px);
+            left: calc(50% - 600px + 20px);
+            width: 377px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400884256"] .tn-atom {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721400884256"] {
+              top: 248px;
+              left: calc(50% - 160px + 10px);
+              width: 143px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721400884256"] .tn-atom {
+              font-size: 14px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400949317"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 9;
+            top: calc(40vh - 275px + 385px);
+            left: calc(50% - 600px + 802px);
+            width: 384px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400949317"] .tn-atom {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721400949317"] {
+              top: 209px;
+              left: calc(50% - 160px + 169px);
+              width: 151px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721400949317"] .tn-atom {
+              font-size: 14px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400993340"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 10;
+            top: calc(40vh - 275px + 479px);
+            left: calc(50% - 600px + 780px);
+            width: 419px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721400993340"] .tn-atom {
+            color: #ffffff;
+            font-size: 19px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721400993340"] {
+              top: 253px;
+              left: calc(50% - 160px + 181px);
+              width: 128px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721400993340"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721401127366"] {
+            z-index: 11;
+            top: calc(40vh - 275px + 158px);
+            left: calc(50% - 600px + 880px);
+            width: 250px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721401127366"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721401127366"] {
+              top: 99px;
+              left: calc(50% - 160px + 205px);
+              width: 110px;
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721401146084"] {
+            z-index: 12;
+            top: calc(40vh - 275px + 158px);
+            left: calc(50% - 600px + 89px);
+            width: 250px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721401146084"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775922859 .tn-elem[data-elem-id="1721401146084"] {
+              top: 105px;
+              left: calc(50% - 160px + 21px);
+              width: 110px;
+            }
+            #rec775922859 .tn-elem[data-elem-id="1721401146084"] .tn-atom {
+              -webkit-transform: rotate(357deg);
+              -moz-transform: rotate(357deg);
+              transform: rotate(357deg);
+            }
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721401315383"] {
+            color: #000000;
+            z-index: 13;
+            top: calc(40vh - 275px + 107px);
+            left: calc(50% - 600px + 695px);
+            width: 60px;
+          }
+          #rec775922859 .tn-elem[data-elem-id="1721401315383"] .tn-atom {
+            color: #000000;
+            font-size: 100px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+          }
+        </style>
+        <div class="t396">
+          <div
+            class="t396__artboard"
+            data-artboard-recid="775922859"
+            data-artboard-screens="320,480,640,960,1200"
+            data-artboard-height="550"
+            data-artboard-valign="center"
+            data-artboard-height_vh="80"
+            data-artboard-upscale="grid"
+            data-artboard-height-res-320="400"
+          >
+            <div class="t396__carrier" data-artboard-recid="775922859"></div>
+            <div class="t396__filter" data-artboard-recid="775922859"></div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400574792"
+              data-elem-id="1721400574792"
+              data-elem-type="text"
+              data-field-top-value="62"
+              data-field-left-value="360"
+              data-field-width-value="560"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+            >
+              <div class="tn-atom" field="tn_text_1721400574792"></div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400580861 t-animate"
+              data-elem-id="1721400580861"
+              data-elem-type="text"
+              data-field-top-value="-64"
+              data-field-left-value="368"
+              data-field-width-value="209"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="0"
+              data-field-left-res-320-value="81"
+              data-field-width-res-320-value="142"
+            >
+              <div class="tn-atom" field="tn_text_1721400580861">
+                TOKENOMICS<br /><strong></strong>
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400691973 t-animate"
+              data-elem-id="1721400691973"
+              data-elem-type="text"
+              data-field-top-value="12"
+              data-field-left-value="141"
+              data-field-width-value="917"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="32"
+              data-field-left-res-320-value="34"
+              data-field-width-res-320-value="253"
+            >
+              <div class="tn-atom" field="tn_text_1721400691973">
+                1,000,000,000 $CORGI
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400767153 t-animate"
+              data-elem-id="1721400767153"
+              data-elem-type="text"
+              data-field-top-value="107"
+              data-field-left-value="400"
+              data-field-width-value="400"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="64"
+              data-field-left-res-320-value="72"
+              data-field-width-res-320-value="176"
+            >
+              <div class="tn-atom" field="tn_text_1721400767153">
+                TOTAL SUPPLY
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400809442 t-animate"
+              data-elem-id="1721400809442"
+              data-elem-type="text"
+              data-field-top-value="412"
+              data-field-left-value="-4"
+              data-field-width-value="424"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="215"
+              data-field-left-res-320-value="9"
+              data-field-width-res-320-value="144"
+            >
+              <div class="tn-atom" field="tn_text_1721400809442">
+                NAME: CORGI LIFE
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400847655 t-animate"
+              data-elem-id="1721400847655"
+              data-elem-type="text"
+              data-field-top-value="459"
+              data-field-left-value="9"
+              data-field-width-value="402"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="231"
+              data-field-left-res-320-value="9"
+              data-field-width-res-320-value="144"
+            >
+              <div class="tn-atom" field="tn_text_1721400847655">
+                TICKER: $CORGI
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400884256 t-animate"
+              data-elem-id="1721400884256"
+              data-elem-type="text"
+              data-field-top-value="506"
+              data-field-left-value="20"
+              data-field-width-value="377"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="248"
+              data-field-left-res-320-value="10"
+              data-field-width-res-320-value="143"
+            >
+              <!-- <div class="tn-atom" field="tn_text_1721400884256">
+                ZERO TAX ON BUY SELL
+              </div> -->
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400949317 t-animate"
+              data-elem-id="1721400949317"
+              data-elem-type="text"
+              data-field-top-value="385"
+              data-field-left-value="802"
+              data-field-width-value="384"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="209"
+              data-field-left-res-320-value="169"
+              data-field-width-res-320-value="151"
+            >
+              <div class="tn-atom" field="tn_text_1721400949317">
+                LIQUID POOL BURNED
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721400993340 t-animate"
+              data-elem-id="1721400993340"
+              data-elem-type="text"
+              data-field-top-value="479"
+              data-field-left-value="780"
+              data-field-width-value="419"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="253"
+              data-field-left-res-320-value="181"
+              data-field-width-res-320-value="128"
+            >
+              <div class="tn-atom" field="tn_text_1721400993340">
+                The liquidity is securely locked, ensuring our community's
+                safety within the $CORGI ecosystem at all times.
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721401127366 t-animate"
+              data-elem-id="1721401127366"
+              data-elem-type="image"
+              data-field-top-value="158"
+              data-field-left-value="880"
+              data-field-width-value="250"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="99"
+              data-field-left-res-320-value="205"
+              data-field-width-res-320-value="110"
+            >
+              <div class="tn-atom">
+                <img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3431-6465-4465-a431-633163646539/ezgif-6-37cd8a537d.gif"
+                  alt=""
+                  imgfield="tn_img_1721401127366"
+                />
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721401146084 t-animate"
+              data-elem-id="1721401146084"
+              data-elem-type="image"
+              data-field-top-value="158"
+              data-field-left-value="89"
+              data-field-width-value="250"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="105"
+              data-field-left-res-320-value="21"
+              data-field-width-res-320-value="110"
+            >
+              <div class="tn-atom">
+                <img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3863-3162-4565-b539-353862393463/ezgif-6-d7fefa6584.gif"
+                  alt=""
+                  imgfield="tn_img_1721401146084"
+                />
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759228591721401315383"
+              data-elem-id="1721401315383"
+              data-elem-type="text"
+              data-field-top-value="107"
+              data-field-left-value="695"
+              data-field-width-value="60"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+            >
+              <div class="tn-atom" field="tn_text_1721401315383"></div>
+            </div>
+          </div>
+        </div>
+        <script>
+          t_onReady(function () {
+            t_onFuncLoad("t396_init", function () {
+              t396_init("775922859");
+            });
+          });
+        </script>
+        <!-- /T396 -->
+      </div>
+      <div
+        id="rec775936955"
+        class="r t-rec t-rec_pt_0"
+        style="padding-top: 0px"
+        data-animationappear="off"
+        data-record-type="396"
+      >
+        <!-- T396 --><style>
+          #rec775936955 .t396__artboard {
+            min-height: 550px;
+            height: 100vh;
+            background-color: #ffffff;
+          }
+          #rec775936955 .t396__filter {
+            min-height: 550px;
+            height: 100vh;
+          }
+          #rec775936955 .t396__carrier {
+            min-height: 550px;
+            height: 100vh;
+            background-position: center center;
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          @media screen and (max-width: 1199px) {
+            #rec775936955 .t396__artboard,
+            #rec775936955 .t396__filter,
+            #rec775936955 .t396__carrier {
+            }
+            #rec775936955 .t396__filter {
+            }
+            #rec775936955 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 959px) {
+            #rec775936955 .t396__artboard,
+            #rec775936955 .t396__filter,
+            #rec775936955 .t396__carrier {
+            }
+            #rec775936955 .t396__filter {
+            }
+            #rec775936955 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 639px) {
+            #rec775936955 .t396__artboard,
+            #rec775936955 .t396__filter,
+            #rec775936955 .t396__carrier {
+            }
+            #rec775936955 .t396__filter {
+            }
+            #rec775936955 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            #rec775936955 .t396__artboard,
+            #rec775936955 .t396__filter,
+            #rec775936955 .t396__carrier {
+            }
+            #rec775936955 .t396__filter {
+            }
+            #rec775936955 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721401468238"] {
+            color: #ffb02e;
+            z-index: 2;
+            top: calc(50vh - 275px + -173px);
+            left: calc(50% - 600px + 357px);
+            width: 487px;
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721401468238"] .tn-atom {
+            color: #ffb02e;
+            font-size: 43px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775936955 .tn-elem[data-elem-id="1721401468238"] {
+              top: 0px;
+              left: calc(50% - 160px + 71px);
+              width: 178px;
+            }
+            #rec775936955 .tn-elem[data-elem-id="1721401468238"] .tn-atom {
+              font-size: 16px;
+            }
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402092719"] {
+            color: #ffb02e;
+            z-index: 3;
+            top: calc(50vh - 275px + -95px);
+            left: calc(50% - 600px + 0px);
+            width: 560px;
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402092719"] .tn-atom {
+            color: #ffb02e;
+            font-size: 20px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775936955 .tn-elem[data-elem-id="1721402092719"] {
+              top: 128px;
+              left: calc(50% - 160px + 10px);
+              width: 301px;
+            }
+            #rec775936955 .tn-elem[data-elem-id="1721402092719"] {
+              text-align: left;
+            }
+            #rec775936955 .tn-elem[data-elem-id="1721402092719"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402157938"] {
+            color: #000000;
+            z-index: 4;
+            top: calc(50vh - 275px + 119px);
+            left: calc(50% - 600px + 0px);
+            width: 560px;
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402157938"] .tn-atom {
+            color: #000000;
+            font-size: 20px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775936955 .tn-elem[data-elem-id="1721402157938"] {
+              top: 236px;
+              left: calc(50% - 160px + 10px);
+              width: 310px;
+            }
+            #rec775936955 .tn-elem[data-elem-id="1721402157938"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402208945"] {
+            color: #000000;
+            z-index: 5;
+            top: calc(50vh - 275px + 297px);
+            left: calc(50% - 600px + 0px);
+            width: 560px;
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402208945"] .tn-atom {
+            color: #000000;
+            font-size: 20px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775936955 .tn-elem[data-elem-id="1721402208945"] {
+              top: 325px;
+              left: calc(50% - 160px + 10px);
+              width: 300px;
+            }
+            #rec775936955 .tn-elem[data-elem-id="1721402208945"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402269828"] {
+            color: #000000;
+            z-index: 6;
+            top: calc(50vh - 275px + 502px);
+            left: calc(50% - 600px + 0px);
+            width: 560px;
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402269828"] .tn-atom {
+            color: #000000;
+            font-size: 20px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775936955 .tn-elem[data-elem-id="1721402269828"] {
+              top: 430px;
+              left: calc(50% - 160px + 10px);
+              width: 303px;
+            }
+            #rec775936955 .tn-elem[data-elem-id="1721402269828"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402625779"] {
+            z-index: 7;
+            top: calc(50vh - 275px + -33px);
+            left: calc(50% - 600px + 590px);
+            width: 610px;
+          }
+          #rec775936955 .tn-elem[data-elem-id="1721402625779"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775936955 .tn-elem[data-elem-id="1721402625779"] {
+              top: 16px;
+              left: calc(50% - 160px + 90px);
+              width: 123px;
+            }
+          }
+        </style>
+        <div class="t396">
+          <div
+            class="t396__artboard"
+            data-artboard-recid="775936955"
+            data-artboard-screens="320,480,640,960,1200"
+            data-artboard-height="550"
+            data-artboard-valign="center"
+            data-artboard-height_vh="100"
+            data-artboard-upscale="grid"
+          >
+            <div class="t396__carrier" data-artboard-recid="775936955"></div>
+            <div class="t396__filter" data-artboard-recid="775936955"></div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759369551721401468238 t-animate"
+              data-elem-id="1721401468238"
+              data-elem-type="text"
+              data-field-top-value="-173"
+              data-field-left-value="357"
+              data-field-width-value="487"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="0"
+              data-field-left-res-320-value="71"
+              data-field-width-res-320-value="178"
+            >
+              <div class="tn-atom" field="tn_text_1721401468238">
+                HOW TO BUY?
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759369551721402092719 t-animate"
+              data-elem-id="1721402092719"
+              data-elem-type="text"
+              data-field-top-value="-95"
+              data-field-left-value="0"
+              data-field-width-value="560"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinright"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="128"
+              data-field-left-res-320-value="10"
+              data-field-width-res-320-value="301"
+            >
+              <!-- <div class="tn-atom" field="tn_text_1721402092719">
+                <a href="https://toncat.space/#tab-11-1"
+                  >1. Create a wallet of your choice</a
+                ><br /><a href="https://toncat.space/#tab-11-1">TON Cat (</a
+                ><a href="https://toncat.space/#tab-11-3">$CORGI</a
+                ><a href="https://toncat.space/#tab-11-1"
+                  >) token is available on the TON blockchain. Tonkeeper is one
+                  of the market leaders in TON wallets. Get Tonkeeper's app for
+                  iPhone, Android or Google Chrome Extension.</a
+                >
+              </div> -->
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759369551721402157938 t-animate"
+              data-elem-id="1721402157938"
+              data-elem-type="text"
+              data-field-top-value="119"
+              data-field-left-value="0"
+              data-field-width-value="560"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinright"
+              data-animate-duration="1"
+              data-animate-delay="0.2"
+              data-animate-distance="100"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="236"
+              data-field-left-res-320-value="10"
+              data-field-width-res-320-value="310"
+            >
+              <!-- <div class="tn-atom" field="tn_text_1721402157938">
+                <a href="https://toncat.space/#tab-11-2"
+                  >2. Send $TON to Tonkeeper</a
+                ><br /><a href="https://toncat.space/#tab-11-2"
+                  >Buy TON through Tonkeeper or transfer it to your Tonkeeper
+                  wallet address from another wallet or exchange (e.g. OKX or
+                  Bybit).</a
+                >
+              </div> -->
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759369551721402208945 t-animate"
+              data-elem-id="1721402208945"
+              data-elem-type="text"
+              data-field-top-value="297"
+              data-field-left-value="0"
+              data-field-width-value="560"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinright"
+              data-animate-duration="1"
+              data-animate-delay="0.4"
+              data-animate-distance="100"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="325"
+              data-field-left-res-320-value="10"
+              data-field-width-res-320-value="300"
+            >
+              <!-- <div class="tn-atom" field="tn_text_1721402208945">
+                <a href="https://toncat.space/#tab-11-3"
+                  >3. Visit DeDust DEX Website</a
+                ><br /><a href="https://toncat.space/#tab-11-3"
+                  >The safest place to buy Corgi Life($CORGI) is on DeDust.
+                  Visit DeDust (www.dedust.io) and click “Connect Wallet” and
+                  select Tonkeeper or the wallet of your choice.</a
+                >
+              </div> -->
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759369551721402269828 t-animate"
+              data-elem-id="1721402269828"
+              data-elem-type="text"
+              data-field-top-value="502"
+              data-field-left-value="0"
+              data-field-width-value="560"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinright"
+              data-animate-duration="1"
+              data-animate-delay="0.6"
+              data-animate-distance="100"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="430"
+              data-field-left-res-320-value="10"
+              data-field-width-res-320-value="303"
+            >
+              <!-- <div class="tn-atom" field="tn_text_1721402269828">
+                <a href="https://toncat.space/#tab-11-4">4. Swap $TON for </a
+                ><a href="https://toncat.space/#tab-11-3">$CORGI</a><br /><a
+                  href="https://toncat.space/#tab-11-4"
+                  >Click the "Swap" Menu and search for </a
+                ><a href="https://toncat.space/#tab-11-3">$CORGI</a
+                ><a href="https://toncat.space/#tab-11-4"> or paste the </a
+                ><a href="https://toncat.space/#tab-11-3">$CORGI</a>
+                <a href="https://toncat.space/#tab-11-4"
+                  >token address into DeDust. Enter the amount of $TON you would
+                  like to swap for </a
+                ><a href="https://toncat.space/#tab-11-3">$CORGI</a
+                ><a href="https://toncat.space/#tab-11-4">
+                  then confirm the Swap. Tonkeeper will ask for your signature,
+                  go ahead and sign it.</a
+                >
+              </div> -->
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759369551721402625779 t-animate"
+              data-elem-id="1721402625779"
+              data-elem-type="image"
+              data-field-top-value="-33"
+              data-field-left-value="590"
+              data-field-width-value="610"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadein"
+              data-animate-duration="1"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="16"
+              data-field-left-res-320-value="90"
+              data-field-width-res-320-value="123"
+            >
+              <div class="tn-atom">
+                <img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3938-3930-4931-b433-633336326336/ezgif-6-6e64c738c5_1.gif"
+                  alt=""
+                  imgfield="tn_img_1721402625779"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          t_onReady(function () {
+            t_onFuncLoad("t396_init", function () {
+              t396_init("775936955");
+            });
+          });
+        </script>
+        <!-- /T396 -->
+      </div>
+      <div
+        id="rec775953803"
+        class="r t-rec"
+        style=""
+        data-animationappear="off"
+        data-record-type="396"
+      >
+        <!-- T396 --><style>
+          #rec775953803 .t396__artboard {
+            height: 540px;
+            background-color: #ffb02e;
+          }
+          #rec775953803 .t396__filter {
+            height: 540px;
+          }
+          #rec775953803 .t396__carrier {
+            height: 540px;
+            background-position: center center;
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          @media screen and (max-width: 1199px) {
+            #rec775953803 .t396__artboard,
+            #rec775953803 .t396__filter,
+            #rec775953803 .t396__carrier {
+            }
+            #rec775953803 .t396__filter {
+            }
+            #rec775953803 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 959px) {
+            #rec775953803 .t396__artboard,
+            #rec775953803 .t396__filter,
+            #rec775953803 .t396__carrier {
+            }
+            #rec775953803 .t396__filter {
+            }
+            #rec775953803 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 639px) {
+            #rec775953803 .t396__artboard,
+            #rec775953803 .t396__filter,
+            #rec775953803 .t396__carrier {
+            }
+            #rec775953803 .t396__filter {
+            }
+            #rec775953803 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .t396__artboard,
+            #rec775953803 .t396__filter,
+            #rec775953803 .t396__carrier {
+              height: 210px;
+            }
+            #rec775953803 .t396__filter {
+            }
+            #rec775953803 .t396__carrier {
+              background-attachment: scroll;
+            }
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404017628"] {
+            color: #ffffff;
+            text-align: center;
+            z-index: 2;
+            top: 136px;
+            left: calc(50% - 600px + 320px);
+            width: 560px;
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404017628"] .tn-atom {
+            color: #ffffff;
+            font-size: 25px;
+            font-family: "Seymour One", Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .tn-elem[data-elem-id="1721404017628"] {
+              top: 102px;
+              left: calc(50% - 160px + 41px);
+              width: 238px;
+            }
+            #rec775953803 .tn-elem[data-elem-id="1721404017628"] .tn-atom {
+              font-size: 10px;
+            }
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404108433"] {
+            z-index: 3;
+            top: 348px;
+            left: calc(50% - 600px + 240px);
+            width: 90px;
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404108433"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .tn-elem[data-elem-id="1721404108433"] {
+              top: 162px;
+              left: calc(50% - 160px + 60px);
+              width: 25px;
+            }
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404114551"] {
+            z-index: 4;
+            top: 348px;
+            left: calc(50% - 600px + 450px);
+            width: 90px;
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404114551"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .tn-elem[data-elem-id="1721404114551"] {
+              top: 162px;
+              left: calc(50% - 160px + 116px);
+              width: 25px;
+            }
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404133329"] {
+            z-index: 5;
+            top: 348px;
+            left: calc(50% - 600px + 870px);
+            width: 90px;
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404133329"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .tn-elem[data-elem-id="1721404133329"] {
+              top: 162px;
+              left: calc(50% - 160px + 230px);
+              width: 25px;
+            }
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404134132"] {
+            z-index: 6;
+            top: 348px;
+            left: calc(50% - 600px + 660px);
+            width: 90px;
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404134132"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .tn-elem[data-elem-id="1721404134132"] {
+              top: 162px;
+              left: calc(50% - 160px + 173px);
+              width: 25px;
+            }
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404239480"] {
+            z-index: 7;
+            top: -35px;
+            left: calc(50% - 600px + 500px);
+            width: 200px;
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404239480"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .tn-elem[data-elem-id="1721404239480"] {
+              top: -24px;
+              left: calc(50% - 160px + 95px);
+              width: 130px;
+            }
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404398686"] {
+            z-index: 8;
+            top: 90px;
+            left: calc(50% - 600px + 951px);
+            width: 200px;
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404398686"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .tn-elem[data-elem-id="1721404398686"] {
+              top: 62px;
+              left: calc(50% - 160px + 280px);
+              width: 40px;
+            }
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404496436"] {
+            z-index: 9;
+            top: 80px;
+            left: calc(50% - 600px + 20px);
+            width: 200px;
+          }
+          #rec775953803 .tn-elem[data-elem-id="1721404496436"] .tn-atom {
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+          }
+          @media screen and (max-width: 1199px) {
+          }
+          @media screen and (max-width: 959px) {
+          }
+          @media screen and (max-width: 639px) {
+          }
+          @media screen and (max-width: 479px) {
+            #rec775953803 .tn-elem[data-elem-id="1721404496436"] {
+              top: 65px;
+              left: calc(50% - 160px + 0px);
+              width: 44px;
+            }
+          }
+        </style>
+        <div class="t396">
+          <div
+            class="t396__artboard"
+            data-artboard-recid="775953803"
+            data-artboard-screens="320,480,640,960,1200"
+            data-artboard-height="540"
+            data-artboard-valign="center"
+            data-artboard-upscale="grid"
+            data-artboard-height-res-320="210"
+          >
+            <div class="t396__carrier" data-artboard-recid="775953803"></div>
+            <div class="t396__filter" data-artboard-recid="775953803"></div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759538031721404017628 t-animate"
+              data-elem-id="1721404017628"
+              data-elem-type="text"
+              data-field-top-value="136"
+              data-field-left-value="320"
+              data-field-width-value="560"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-top-res-320-value="102"
+              data-field-left-res-320-value="41"
+              data-field-width-res-320-value="238"
+            >
+              <div class="tn-atom" field="tn_text_1721404017628">
+                Join the incredible adventures with $CORGI on our social media
+                channels
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759538031721404108433 t-animate"
+              data-elem-id="1721404108433"
+              data-elem-type="image"
+              data-field-top-value="348"
+              data-field-left-value="240"
+              data-field-width-value="90"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="162"
+              data-field-left-res-320-value="60"
+              data-field-width-res-320-value="25"
+            >
+              <a class="tn-atom" href="t.me/CorgiTokenTon"
+                ><img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3566-6366-4032-a334-656531643830/send_17090933.png"
+                  alt=""
+                  imgfield="tn_img_1721404108433"
+              /></a>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759538031721404114551 t-animate"
+              data-elem-id="1721404114551"
+              data-elem-type="image"
+              data-field-top-value="348"
+              data-field-left-value="450"
+              data-field-width-value="90"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="162"
+              data-field-left-res-320-value="116"
+              data-field-width-res-320-value="25"
+            >
+              <a class="tn-atom" href="x.com/LifeCorgiTON"
+                ><img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3766-6537-4138-b037-373064666236/twitter_1391047.png"
+                  alt=""
+                  imgfield="tn_img_1721404114551"
+              /></a>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759538031721404133329 t-animate"
+              data-elem-id="1721404133329"
+              data-elem-type="image"
+              data-field-top-value="348"
+              data-field-left-value="870"
+              data-field-width-value="90"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="1000"
+              data-field-fileheight-value="1000"
+              data-field-top-res-320-value="162"
+              data-field-left-res-320-value="230"
+              data-field-width-res-320-value="25"
+            >
+              <a class="tn-atom" href="https://dexscreener.com"
+                ><img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3265-3933-4331-a233-326332313937/dex-screener-logo-pn.png"
+                  alt=""
+                  imgfield="tn_img_1721404133329"
+              /></a>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759538031721404134132 t-animate"
+              data-elem-id="1721404134132"
+              data-elem-type="image"
+              data-field-top-value="348"
+              data-field-left-value="660"
+              data-field-width-value="90"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="384"
+              data-field-fileheight-value="384"
+              data-field-top-res-320-value="162"
+              data-field-left-res-320-value="173"
+              data-field-width-res-320-value="25"
+            >
+              <a class="tn-atom" href="https://xrpscan.io"
+                ><img
+                  class="tn-atom__img t-img"
+                  data-original="/asset/xrp_ledger_logo.jpg"
+                  alt=""
+                  imgfield="tn_img_1721404134132"
+              /></a>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759538031721404239480 t-animate"
+              data-elem-id="1721404239480"
+              data-elem-type="image"
+              data-field-top-value="-35"
+              data-field-left-value="500"
+              data-field-width-value="200"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="-24"
+              data-field-left-res-320-value="95"
+              data-field-width-res-320-value="130"
+            >
+              <div class="tn-atom">
+                <img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3037-3035-4164-a334-626662343361/ezgif-6-2bf0d713d2.gif"
+                  alt=""
+                  imgfield="tn_img_1721404239480"
+                />
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759538031721404398686 t-animate"
+              data-elem-id="1721404398686"
+              data-elem-type="image"
+              data-field-top-value="90"
+              data-field-left-value="951"
+              data-field-width-value="200"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="62"
+              data-field-left-res-320-value="280"
+              data-field-width-res-320-value="40"
+            >
+              <div class="tn-atom">
+                <img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3539-3864-4366-a633-646330333065/ezgif-6-f880f2697f.gif"
+                  alt=""
+                  imgfield="tn_img_1721404398686"
+                />
+              </div>
+            </div>
+            <div
+              class="t396__elem tn-elem tn-elem__7759538031721404496436 t-animate"
+              data-elem-id="1721404496436"
+              data-elem-type="image"
+              data-field-top-value="80"
+              data-field-left-value="20"
+              data-field-width-value="200"
+              data-field-axisy-value="top"
+              data-field-axisx-value="left"
+              data-field-container-value="grid"
+              data-field-topunits-value="px"
+              data-field-leftunits-value="px"
+              data-field-heightunits-value=""
+              data-field-widthunits-value="px"
+              data-animate-style="fadeinup"
+              data-animate-duration="1"
+              data-animate-distance="100"
+              data-animate-prx="scroll"
+              data-animate-mobile="y"
+              data-field-filewidth-value="512"
+              data-field-fileheight-value="512"
+              data-field-top-res-320-value="65"
+              data-field-left-res-320-value="0"
+              data-field-width-res-320-value="44"
+            >
+              <div class="tn-atom">
+                <img
+                  class="tn-atom__img t-img"
+                  data-original="https://static.tildacdn.com/tild3539-3864-4366-a633-646330333065/ezgif-6-f880f2697f.gif"
+                  alt=""
+                  imgfield="tn_img_1721404496436"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          t_onReady(function () {
+            t_onFuncLoad("t396_init", function () {
+              t396_init("775953803");
+            });
+          });
+        </script>
+        <!-- /T396 -->
+      </div>
+    </div>
+    <!--/allrecords--><!-- Stat -->
+    <script type="text/javascript">
+      if (!window.mainTracker) {
+        window.mainTracker = "tilda";
+      }
+      window.tildastatcookie = "no";
+      setTimeout(function () {
+        (function (d, w, k, o, g) {
+          var n = d.getElementsByTagName(o)[0],
+            s = d.createElement(o),
+            f = function () {
+              n.parentNode.insertBefore(s, n);
+            };
+          s.type = "text/javascript";
+          s.async = true;
+          s.key = k;
+          s.id = "tildastatscript";
+          s.src = g;
+          if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+            f();
+          }
+        })(
+          document,
+          window,
+          "6da9be6801498507c984cfd2be17026b",
+          "script",
+          "https://static.tildacdn.com/js/tilda-stat-1.0.min.js"
+        );
+      }, 2000);
+    </script>
+  </body>
+</html>
